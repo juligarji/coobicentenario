@@ -1,0 +1,284 @@
+/*
+    Theme Name: Anyar
+    Theme URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+*/
+
+/* ==== Google font ==== */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+@import url('font-awesome.css');
+/* ==== overwrite bootstrap standard ==== */
+@import url('animate.css');
+
+
+
+body {
+	/*font-family:'Open Sans', Arial, sans-serif;*/
+	font-family: 'Nunito', sans-serif;
+	font-size:16px;
+	font-weight:300;
+	line-height:1.6em;
+	color:black;
+	background-color:#fff;
+	overflow-x:hidden;
+}
+a{
+	color:black;
+}
+a:link{
+	text-decoration:none; 
+	color:black;
+}
+a:hover{
+	color:black;
+}
+
+/* logo principal */
+#logo{
+	margin-bottom: 5px;
+}
+@media only screen and (max-width: 600px){
+	#logo{
+		width: 80%;
+	}
+}
+
+/* titulos de la pagina */
+h2{
+	color:#336600;
+	font-size:35px;
+	text-shadow: rgb(10,10,10) 1px 1px 3px;
+	-moz-text-shadow: rgb(10,10,10) 1px 1px 3px;
+	-ms-text-shadow: rgb(10,10,10) 1px 1px 3px;
+	-o-text-shadow: rgb(10,10,10) 1px 1px 3px;
+	-webkit-text-shadow: rgb(10,10,10) 1px 1px 3px;
+}
+h3{
+	font-size:28px;
+}
+
+/* barra de navegacion ******************************* */
+nav.navbar{
+	background: linear-gradient(#336600, #486626);
+	text-align: center;
+	font-size:20px;
+}
+/*nav ul li.active{
+	
+	background: linear-gradient(#CC3E14, #CC5635);
+}*/
+.navbar ul li {
+	color:white;
+	font-size:16px;
+	font-style:bold;
+	padding:0px;
+}
+.navbar ul li .dropdown-menu a{
+	color:rgb(50,50,50);
+}
+.elemento-titulo > a{
+	color:white !important;
+}
+.elemento-titulo.active > a{
+	color:rgb(25,25,25) !important;
+}
+.elemento-titulo.open > a{
+	color:rgb(25,25,25) !important;
+}
+.elemento-lista{
+	font-size:15px !important;
+}
+.elemento-lista>a:hover{
+	color:white !important;
+	background-color:rgba(51, 102, 0,0.5) !important;
+}
+@media only screen and (max-width: 600px){
+	.elemento-lista {
+		color:white !important;
+		border-bottom: 1px dashed  rgb(230,230,230)  !important;
+		font-weight: bold !important;
+		font-size:30px;
+	}
+	.elemento-titulo{
+		border-bottom: 1px solid rgba(10,10,10,0.7) !important;
+	}
+	.elemento-titulo.open > a{
+		color:rgb(25,25,25) !important;
+	}
+	
+	
+}
+/*
+.navbar ul li .elemento-lista a{
+	font-size:6px;
+}*/
+
+
+@media only screen and (max-width: 1200px){
+	nav.navbar{
+		font-size:13px;
+	
+	}
+}
+
+@media only screen and (max-width: 992px){
+
+}
+
+
+/*****************************************************************/
+/* carusel */
+#fotos {
+	
+	position:relative;
+}
+#fotos img{
+	
+	height: 450px;
+}
+/* ahorro */
+
+#ahorro div.panel{
+	position: absolute;
+	top: 50%;
+}
+/* barra de servicios */
+ #servicios div.prestamos:hover {
+	transition: all .2s ease-in-out;
+	transform: scale(1.2);
+	color:black;
+	
+}
+#servicios h3{
+	color:#336600;
+	text-shadow: rgb(10,10,10) 1px 1px 1px;
+	-moz-text-shadow: rgb(10,10,10) 1px 1px 1px;
+	-ms-text-shadow: rgb(10,10,10) 1px 1px 1px;
+	-o-text-shadow: rgb(10,10,10) 1px 1px 1px;
+	-webkit-text-shadow: rgb(10,10,10) 1px 1px 1px;
+}
+@media only screen and (max-width: 600px){
+	#fotos img{
+		height: 280px;
+	}
+}
+/* letter de totales */
+.letter{
+	font-size:14px;
+}
+/* creditos */
+#creditos-info{
+	font-size: 13px;
+}
+#creditos-info h3{
+	font-size: 20px;
+	margin-bottom:25px;
+}
+#creditos-info img{
+	border:solid rgb(40,40,40) 3px;
+	border-radius: 20%;
+	-webkit-border-radius: 20%;
+	-ie-border-radius: 20%;
+	-moz-border-radius: 20%;
+	-o-border-radius: 20%;
+
+	background-color:rgba(51, 102, 0,0.8);
+	-ie-background-color:rgba(51, 102, 0,0.8);
+	-moz-background-color:rgba(51, 102, 0,0.8);
+	-o-background-color:rgba(51, 102, 0,0.8);
+	-webkit-background-color:rgba(51, 102, 0,0.8);
+}
+#creditos-info div.right-divider{
+	margin-top:40px;
+}
+#creditos-info div.right-divider img{
+	border:none;
+	background:none;
+}
+#creditos-info-text{
+	margin-top:10px;
+	font-size:14px;
+}
+/* informacion */
+/* informacion */
+#informacion{
+	font-size:10px;
+}
+#informacion h3{
+	font-size:20px;
+}
+#informacion ul{
+	text-decoration: none;
+	list-style: none;
+}
+#informacion i{
+	margin-right:6px;
+	
+}
+/* Navegador */
+#navegador{
+	font-size:10px;
+}
+#navegador a{
+	text-decoration: underline;
+	-webkit-text-decoration: underline;
+	-ie-text-decoration: underline;
+	-moz-text-decoration: underline;
+	-o-text-decoration: underline;
+}
+#navegador li{
+	margin:0px;
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+	display:none;
+	color:white;
+	background-color:rgba(51, 102, 0,0.8);
+}
+
+
+
+/* Navegador */
+
+@media only screen and (max-width: 600px){
+	.tabla-catb{
+		font-size:12px;
+	}
+}
+/* footer */
+
+#entes img{
+
+	height:100%;
+    vertical-align:middle;
+   
+}
+.cdt_values{
+	font-size:13px;
+}
+#footer{
+	background: linear-gradient(#336600, #486626);
+	text-shadow:2px 2px 1px rgb(50,50,50);
+	color:white;
+}
+#footer small{
+	padding-bottom:0px;
+	padding:0px;
+	line-height: 1px;
+}
+@media only screen and (max-width: 992px){
+	#entes{
+		display:none;
+	}
+}
+
+/* estilos extra */
+#credito {
+	font-size:15px;
+}
+

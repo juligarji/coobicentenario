@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cooperativa Bicentenario</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <!-- Bootstrap -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="vendor/animate/animate.min.css">
+  <link rel="stylesheet" href="css/finalStyle.css">
+
+  <!-- =======================================================
+    Theme Name: Anyar
+    Theme URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+  <style>
+      #map {
+       height: 400px;
+       width: 100%;
+      }
+      @media only screen and (max-width: 600px){
+        #map{
+          height: 300px;
+        }
+      }
+   </style>
+</head>
+
+<body>
+  <div class="container">
+      <div class="row animated fadeInUp">
+          <a href="index.html">
+              <img id='logo' src="img/logo.png" alt="logo cooperativa" width="450px">
+          </a>
+        </div>
+  
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>        
+            </div>
+          
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse elemento-lista" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav col-md-12">
+                <li class="col-md-1 active elemento-titulo"><a href="index.html">Inicio</a></li>
+                <li class="dropdown col-md-2 elemento-titulo">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Quienes Somos<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li class="text-center elemento-lista"><a href="importancia_ahorro.html" class="elemento-lista">Importancia del Ahorro</a></li>
+                    <li class="text-center elemento-lista"><a href="historia.html" class="elemento-lista">Nuesta Historia</a></li>
+                    <li class="text-center elemento-lista"><a href="imagen_futuro.html" class="elemento-lista">Imagén de Futuro</a></li>
+                    <li class="text-center elemento-lista"><a href="declaracion_futuro.html" class="elemento-lista">Declaración de Futuro</a></li>
+                    <li class="text-center elemento-lista"><a href="grupo_trabajo.html" class="elemento-lista">Grupo de Trabajo</a></li>
+                    <li class="divider"></li>
+                  </ul>
+                </li>
+                <li class="dropdown col-md-2 elemento-titulo">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Productos<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="express.html" class="elemento-lista text-center">Crédito Express</a></li>
+                    <li><a href="medio_plazo.html" class="elemento-lista text-center">Crédito Medio Plazo</a></li>
+                    <li><a href="largo_plazo.html" class="elemento-lista text-center">Crédito Largo Plazo</a></li>
+                    <li class="divider"></li>
+                    <li><a href="catb.html" class="elemento-lista text-center">CATB</a></li>
+                   
+                  </ul>
+                </li>
+                <li class="dropdown col-md-2 elemento-titulo">
+                    <a href="#" class="dropdown-toggle  elemento-titulo" data-toggle="dropdown" >Negocios<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="chiquinquira.html" class="elemento-lista text-center">Chiquinquirá</a></li>
+                      <li><a href="fusagasuga.html" class="elemento-lista text-center">Fusagasugá</a></li>
+                      <li><a href="macheta.html" class="elemento-lista text-center">Macheta</a></li>
+                      <li><a href="soacha.html" class="elemento-lista text-center">Soacha</a></li>
+                    </ul>
+                </li>
+                <li class="col-md-2  elemento-titulo"><a href="convenios.html" >Convenios</a></li>
+                <li class="col-md-2  elemento-titulo"><a href="contacto.html" >Contacto</a></li>
+                <li class="col-md-1  elemento-titulo"><a href="preguntas_frec.html" >PF</a></li>
+              </ul>
+            
+            </div><!-- /.navbar-collapse -->
+          </nav>
+      <!-- Carrusel -->
+      <div class="row  animated fadeInUp" id="fotos">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>                
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="img/carrusel/1.jpg"  width="100%" alt="Chicago">
+                  </div>
+                  <div class="item">
+                      <img src="img/carrusel/2.jpg"  width="100%" alt="Chicago">
+                  </div>
+                  <div class="item">
+                    <img src="img/carrusel/3.jpg"  width="100%" alt="Chicago">
+                  </div>
+                  <div class="item">
+                    <img src="img/carrusel/4.jpg"  width="100%" alt="Chicago">
+                  </div>
+                  <div class="item">
+                    <img src="img/carrusel/5.jpg"  width="100%" alt="Chicago">
+                  </div>
+                </div>
+              
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+         
+      </div>
+      <!-- Wrapper for slides -->
+     
+            <!-- <hr>
+              <div class="row">
+                <div class="container" id="ahorro">
+                    <h2 class="text-center  animated fadeInUp">LA IMPORTANCIA DEL AHORRO</h2>
+                    <hr>
+                    <div class="col-md-7  animated fadeInUp">
+                      <div class="panel panel-default">
+                          <div class="panel-body">
+                              <p class="text-justify">
+                                El ahorro <strong>no</strong> es lo que te sobra, se trata de una cantidad fija que debes incluir en tú presupuesto y que puedees incrementar en la medida en que reduzcas gastos o incrementes tus ingresos.
+                              </p>
+                              <p class="text-justify">
+                                Destina tú ahorros a tres grandes propósitos :
+                              </p>
+                              <ul>
+                                <li>Alcanzar tus metas de corto y mediano plazo.</li>
+                                <li>Contar con un capital para invertir y alcanzar metas de largo plazo.</li>
+                                <li>Crear un fondo para emergencia.</li>
+                              </ul>
+                          </div>
+                      </div>          
+                    </div>
+                    <div class="col-md-5  animated fadeInLeft">
+                        <img src="img/como_ahorrar.jpg" alt="" width="100%">
+                    </div>
+                </div> 
+              </div>
+              <hr> -->
+      <!-- Que es el ahorro -->
+      <div class="row">
+          
+          <div class="container">
+              
+              <hr>
+              <div class="col-md-6 col-md-push-3 animated fadeInLeft">
+                 <!-- <img src="img/main.png" alt="" width="100%"> -->
+              </div>
+
+              <!--
+              <div class="col-md-7  animated fadeInUp">
+                <h3 class="text-center">Qué es y cómo funciona el <strong>CDT</strong></h3>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="text-justify">
+                            Los certificados de depósito a término fijo o <strong>CDT</strong> funcionan de la siguiente manera, dejamos en la cooperativa nuestro dinero por un periodo determinado. Al pasar este período recibiremos el dinero de vuelta junto a una suma adicional, debido a la rentabilidad, nuestra recompensa por dejar el dinero en la Cooperativa  y no utilizarlo.
+                        </p>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="text-justify">
+                            La rentabilidad que vamos a recibir de la Cooperativa depende del tiempo y la cantidad de dinero que dejemos, pero si la comparamos es superior a la ofrecida en otras instituciones.
+                        </p>
+                    </div>
+                </div>
+                
+              </div> -->
+          </div> 
+        </div>
+      <div class="row text-center  animated fadeInUp" id="servicios">
+        <div class="container col-md-12">
+         
+            <h2 class="text-center  animated fadeInUp">PORTAFOLIO DE CRÉDITOS</h2>
+            <hr>
+          <div class="col-md-10 col-md-push-1">
+              <div class="col-md-4 prestamos" >
+                <a href="express.html">
+                    <img src="img/services/corto_plazo.png" alt="">
+                    <h3>Express</h3>
+                    <p>Crédito en cuestion de minutos</p>
+                </a>
+              </div>
+              <div class="col-md-4 prestamos" >
+                <a href="medio_plazo.html">
+                    <img src="img/services/medio_plazo.png" alt="">
+                    <h3>Medio Plazo</h3>
+                    <p>Con plazos hasta 6 meses</p>
+                </a>
+              </div>
+              <div class="col-md-4 prestamos" >
+                <a href="largo_plazo.html">
+                    <img src="img/services/largo_plazo.png" alt="">
+                    <h3>Libre Inversion</h3>
+                    <p>Has realidad tus sueños</p>
+                </a>
+              </div>
+                    
+                      
+          </div>
+            
+        </div>
+      </div>
+      <hr>
+
+      <div class=" animated fadeInRight container">
+          <div id="map"></div>
+      </div>
+      <hr>
+      <div class="row  animated fadeInUp" id="informacion">
+        <div class="container">
+          <div class="col-md-4"  style="font-size:15px">
+            <h3 class="text-center"> <strong>Cooperativa Multiactiva Bicentenario</strong></h3>
+            <ul>
+              <li><i class="fa fa-home" aria-hidden="true"></i> Carrera 11 N° 16 A 09</li>
+              <li><i class="fa fa-compass" aria-hidden="true"></i> Barrio Villa Clara, Soacha Cundinamarca</li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i> 901 10 72 </li>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i> dir_admin@coobicentenario.com </li>
+            </ul>
+          </div>
+          <div class="col-md-4" id="navegador">
+            <div class="row text-center">
+                <h5 class="text-center row"><strong>Productos</strong></h5>
+                <ul class="col-md-12"  style="font-size:15px">
+                  <li><a href="express.html">Crédito Express</a></li>
+                  <li><a href="medio_plazo.html">Crédito Medio Plazo</a></li>
+                  <li><a href="largo_plazo.html">Crédito Largo Plazo</a></li>
+                </ul>
+            </div>
+            <div class="row text-center">
+                <h5 class="text-center row"><strong>Informacion</strong></h5>
+                <ul class="col-md-12"  style="font-size:15px">
+                  <li class=""><a href="quienes_somos.html">Quienes Somos</a></li>
+                  <li class=""><a href="contacto.html">Contacto</a></li>
+                  <li class=""><a href="preguntas_frec.html">PF</a></li>
+                </ul>
+            </div>
+      
+          </div>
+          <div id="entes" class="col-md-4">
+            <h3><strong>Entes Fiscalizadores</strong></h3>
+            <div class="col-md-4">
+              <img src="img/uiaf.png" alt="" width="100%">
+            </div>
+            <div class="col-md-8">
+              <img src="img/supersol.png" alt="" width="100%">
+            </div>
+            <div class="col-md-12">
+              <img src="img/superfinan.png" alt="" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <div class="row" id="footer">
+        <div class="col-md-12">
+          <div class="copyright text-center">
+            <small>Cooperativa Multiactiva Bicentenario <i class="fa fa-registered" aria-hidden="true"></i></small> 
+            <div class="credits">
+              <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Anyar
+              -->
+              <small> With <i class="fa fa-heart" aria-hidden="true"></i> by Wolfay Projects.</small>
+             
+             
+            </div>
+          </div>
+        </div>
+      </div>
+        
+
+  </div>
+  
+  <a id="back-to-top" href="#" class="btn btn-default btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+	    
+  
+
+
+  <!-- XXXXXXXXXXXXXXXXXXXX -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <link rel="stylesheet" href="css/finalStyle.css">
+<!--
+  <script src="js/initMaterialize.js"></script>
+-->
+<script src="js/backToTop.js"></script>
+<script>
+      function initMap() {
+        var uluru = {lat: 4.586067, lng: -74.217182};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          mapTypeControl: true,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+     <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX0tLr1EQ33Nefdw8tMhgUUb8SlC-WgGM&callback=initMap">
+     </script>
+     <script type="text/javascript">
+      $(document).ready(function(){
+           $("#myCarousel").carousel();
+      });
+      </script>
+
+</body>
+
+</html>
+
+            
